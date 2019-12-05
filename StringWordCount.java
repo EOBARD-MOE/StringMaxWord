@@ -28,14 +28,28 @@ import javax.swing.*;
         for(int j=i+1;j<Arr.length;j++)
           if(Arr[i].equals(Arr[j]))// For String Comaparison
             WordCount++;          
-        Count[i]=WordCount+1;
-        if(WordCount>=Max){
+       if(WordCount!=0)  // For Index not match
+          Count[i]=WordCount+1;
+        if(WordCount>=Max)
           Max=WordCount; // Assign If Count is Max
-          K.append(Arr[i]); // Maximum count of word Assign
-          K.append(','); // Word Separate with Comma 
+      }
+      // For Not Mix Single Word and Repeating word
+      for(int i=0;i<Arr.length;i++){
+          if(Count[i]>=Max){
+            K.append(Arr[i]); // Maximum count of word Assign
+            K.append(','); // Word Separate with Comma 
         }
       }
-       
+      
+      // Remove Extra Zero (0) (Trim)
+      int j=0;
+      for(int i=0;i<Count.length;i++){
+        if(Count[i]!=0){
+          Count[j]=Count[i];
+          j++;
+        }
+      }
+      
       // For Maximum Count Of Word Display
       char ch=JOptionPane.showInputDialog("DO YOU WANT TO SEE THE MAXIMUM WORD COUNT PRESS 'Y' AND 'N'").charAt(0);    
       if(ch=='Y'||ch=='y'){
