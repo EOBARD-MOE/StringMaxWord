@@ -8,13 +8,17 @@ commasTerms and Conditions:- Do with Functions(Method)
 
 Example:-1.  String Input-Sun Shine Sun is rise Sun
                     Output-Sun
+                    
          2.  String Input-Sun Shine is Moon
                     Output-Sun,Shine,is,Moon
+                    
          3.ENTER THE STRING:The Sun Shine is Shine Sun so SunShine is SunShine
+         
            Sun        2
            Shine      2
            is         2
            SunShine   2
+           
            THE MAMIXMUM REPEATING WORD IS:Sun,Shine,is,SunShine
                   
           
