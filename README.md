@@ -12,5 +12,11 @@ Example:-1.  String Input-Sun Shine Sun is rise Sun
                     Output-Sun,Shine
          3.  String Input-Sun Shine is Moon
                     Output-Sun,Shine,is,Moon
+         4.ENTER THE STRING:The Sun Shine is Shine Sun so SunShine is SunShine
+           Sun        2
+           Shine      2
+           is         2
+           SunShine   2
+           THE MAMIXMUM REPEATING WORD IS:Sun,Shine,is,SunShine
                   
           
