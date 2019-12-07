@@ -29,7 +29,7 @@ import javax.swing.*;
           if(Arr[i].equals(Arr[j]))// For String Comaparison
             WordCount++;          
         if(WordCount!=0)  // For Index not match
-          Count[i]=WordCount+1;
+          WordCount+=1;
         if(WordCount>=Max){
           Max=WordCount; // Assign If Count is Max
           Count[i]=Max; // Assign in Array Of Continue Store
